@@ -1,0 +1,30 @@
+<div class="list-group">
+     <div class="list-group-item" ng-repeat="x in lists">
+        <div class="item clearFix"  id={{x.id}}>
+            <div class="item-left">
+                    <div class="item-title">
+                            <span>{{x.tab ==='share' ? '分享': x.tab=== 'ask'? '回答' : '招聘'}}</span>
+                            <a ui-sref="detail({testID:x.id})" ng-click="addId(x.id)">{{x.title}}</a>
+                        </div>
+                作者：{{x.author.loginname+'&nbsp;'+'发表于:'+'&nbsp;'+formatDate(x.create_at)}}
+            </div>
+            <div class="item-right">
+                回复：{{x.reply_count}}丨访问：{{x.visit_count}}
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-md-12 pagination-wrap">
+            <ul class="pagination">
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">下一页</a></li>
+                <li><a href="#" class="disable">当前第：</a></li>
+                <li><a href="#" class="disable">1</a></li>
+                <li><a href="#" class="disable">页</a></li>
+                <li><a class="input-link" ><input type="text" class="pagination-input" /></a></li>
+                <li><a href="#">跳转</a></li>
+                <li><a href="#" class="input-link" >每页条数：</a></li>
+                <li></li>
+            </ul>
+        </div>
+</div>

@@ -1,0 +1,14 @@
+
+
+   <div>
+       <h2>{{details.title}}</h2>
+       <br>
+       <div>
+            <span class="span">{{details.tab ==='share' ? '分享': details.tab=== 'ask'? '回答' : '招聘'}}</span>
+           <span>作者：{{details.author.loginname}}</span>
+           <span>发表于：{{formatDate(details.create_at)}}</span>
+           
+       </div>
+   </div>
+   <div id="contents"></div>
+   <div id="replie"></div>

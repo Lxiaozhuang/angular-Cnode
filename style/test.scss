@@ -1,0 +1,111 @@
+ul,li{ padding:0;margin:0;list-style:none};
+h3{margin: 0;padding: 20px 0;}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+//头部样式
+.header{
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 100px;
+}
+.header_left{
+    float: left;
+    font-weight: bold;
+    font:50px/100px '微软雅黑';
+    padding: 0 10px;
+}
+.header_right{
+    float: right;
+    font-weight: bold;
+    font: 36px/100px '微软雅黑';
+    padding: 0 20px 0 10px;
+    cursor: pointer;
+    color: #000000
+}
+.main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu{
+    width: 300px;
+    float: left;
+}
+.menu_content{
+    font-size: 16px;
+	h3{
+		font-size: 16px;	
+	}
+	ul{
+        text-align: center;
+		li{
+			cursor:pointer;
+            font:24px/50px '微软雅黑';
+            // :hover{
+            //     background: #a3ecec;
+            //     a{
+            //         color: #fff
+            //     }
+            // }
+		}
+		
+	}
+	a{
+		color:#777779
+	}	
+}
+// .active{
+//     background: #a3ecec;
+//     a{
+//         color: #fff
+//     }
+// }
+.clearFix:after{
+    display:block;
+    clear:both;
+    content:""
+}
+
+.content{
+	height: 100%;
+	width:calc(100% - 300px);
+	float:right;
+	background: #f7f7f7;
+}
+.item-left{
+    float:left;
+    width: 75%;
+    h4{
+        padding: 10px 0 ;
+    }
+}
+.item-right{
+    float: right;
+    width: 20%;
+    padding: 30px 0;
+}
+.item-title{
+    padding: 10px 0;
+}
+.item-title span{
+    display: inline-block;
+    background: #0deca9;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    border-radius:4px; 
+}
+.item-left a{
+    color: rgb(142, 187, 255);
+    font-size: 16px;
+}
+.span{
+    display: inline-block;
+    background: #0deca9;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    border-radius:4px; 
+}

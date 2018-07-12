@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C-node社区</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+    <script type="text/javascript" src="lib/wangEditor-3.1.1/release/wangEditor.min.js"></script>
+    <script src="/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_left">
+            <div class="logo">
+               小小社区
+            </div>
+        </div>
+        <div class="header_right">
+            <div class="center">
+                个人中心
+            </div>
+        </div>
+    </header>
+    <div class="main clearFix">
+        <div class="menu">
+            <div class="menu_content">
+                <ul>
+                    <li>
+                        <h3><a ui-sref="all">全部</a></h3>
+                    </li>
+                    <li>
+                        <h3><a ui-sref="good">精华</a></h3>
+                    </li>
+                    <li>
+                        <h3><a ui-sref="share">分享</a></h3>
+                    </li>
+                    <li>
+                        <h3><a ui-sref="ask">问答</a></h3>
+                    </li>
+                    <li>
+                        <h3><a ui-sref="job">招聘</a></h3>
+                    </li>
+                    <li>
+                        <h3><a ui-sref="dev">测试</a></h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div ui-view></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="build.js"></script>
