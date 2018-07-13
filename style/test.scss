@@ -12,6 +12,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .header_left{
     float: left;
+    width: 30%;
+    text-align: center;
     font-weight: bold;
     font:50px/100px '微软雅黑';
     padding: 0 10px;
@@ -19,10 +21,18 @@ h1,h2,h3,h4,h5,h6{
 .header_right{
     float: right;
     font-weight: bold;
-    font: 36px/100px '微软雅黑';
-    padding: 0 20px 0 10px;
+    height: 100px;
+    vertical-align: middle;
     cursor: pointer;
-    color: #000000
+    color: #000000;
+    .center{
+        margin-top: 36px;
+        button{
+            margin-right: 20px;
+            padding: 5px 10px;
+        }
+
+    }
 }
 .main{
     width: 100%;

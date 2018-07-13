@@ -16,14 +16,14 @@
        </div>
        <div class="col-md-12 pagination-wrap">
             <ul class="pagination">
-                <li><a href="#">上一页</a></li>
-                <li><a href="#">下一页</a></li>
-                <li><a href="#" class="disable">当前第：</a></li>
-                <li><a href="#" class="disable">4</a></li>
-                <li><a href="#" class="disable">页</a></li>
-                <li><a class="input-link" ><input type="text" class="pagination-input" /></a></li>
-                <li><a href="#">跳转</a></li>
-                <li><a href="#" class="input-link" >每页条数：</a></li>
+                <li><a ng-click="prev()">上一页</a></li>
+                <li><a ng-click="next()">下一页</a></li>
+                <li><a class="disable">当前第：</a></li>
+                <li><a class="disable">{{num}}</a></li>
+                <li><a class="disable">页</a></li>
+                <li><a class="input-link" ><input type="text" class="pagination-input" ng-model="pages"/></a></li>
+                <li><a ng-click="addPages()">跳转</a></li>
+                <li><a class="input-link" >每页条数：{{length}}条</a></li>
                 <li></li>
             </ul>
         </div>

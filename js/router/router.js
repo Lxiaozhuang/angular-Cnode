@@ -31,5 +31,9 @@ app.config(["$stateProvider","$urlRouterProvider",function($stateProvider,$urlRo
             url:'/dev',
             templateUrl:'../tpl/dev/dev.html',
             controller:'devController'
+        }).state("login",{
+            url:'/login',
+            templateUrl:'../tpl/login/login.html',
+            controller:'loginController'
         })
 }])
